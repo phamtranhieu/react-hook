@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+.form-sales {
+  border: 1px solid red;
+  width: 90%;
+  margin: 0 auto;
+  .title-sale {
+    display: flex;
+    justify-content: space-around;
+  }
+  .form {
+    display: flex;
+    justify-content: space-evenly;
+    .form-left {
+      flex: 1;
+      flex-basis: 50%;
+      .select-date-form {
+        display: flex;
+        label {
+          width: 82px;
+          margin-left: 11rem;
+          margin-bottom: 2rem;
+        }
+        .ant-select {
+          flex: 1;
+        }
+      }
+    }
+    .form-right {
+      flex: 1;
+      flex-basis: 50%;
+      .select-date-form {
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+        label {
+          width: 191px;
+          // margin-bottom: 2rem;
+          float: left;
+          text-align: right;
+          line-height: 54px;
+          margin: 0;
+          margin-left: 4rem;
+        }
+        .ant-picker {
+          flex: 1;
+        }
+      }
+    }
+  }
+  .form-product {
+    display: block;
+    width: 100%;
+    .title-product {
+      display: grid;
+      grid-template-columns: 5rem repeat(3, 1fr) 5rem;
+      gap: 1rem;
+    }
+    .detail-product {
+      display: grid !important;
+      grid-template-columns: 5rem repeat(3, 1fr) 5rem;
+      .ant-space-item {
+        width: 100%;
+      }
+    }
+    .button-add {
+      width: 10%;
+      float: right;
+    }
+  }
+  .button-submit {
+    // width: 100% !important;
+    // float: right;
+  }
+}
